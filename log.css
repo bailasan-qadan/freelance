@@ -1,0 +1,238 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* ================= MAIN LAYOUT ================= */
+.auth-wrapper {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    width: 100%;
+    min-height: calc(100vh - 150px); 
+}
+
+/* ================= FORM SIDE ================= */
+.auth-form {
+    width: 100%;
+    max-width: 600px;        /* Maximum width */
+    padding: 60px 80px;
+    background: #ffffff;
+    border-radius: 12px; 
+    margin-top: -100px;
+}
+
+/* ================= BRAND ================= */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.brand img {
+    width: 58px;
+    height: 58px;
+}
+
+.brand span {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0a3d2f;
+}
+
+/* ================= TITLE ================= */
+.auth-form h2 {
+    font-size: 30px;
+    margin-bottom: 30px;  
+    color: #0a3d2f;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+/* ================= FORM ================= */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* ================= FORM GROUP================= */
+.form-group {
+    margin-bottom: 24px; 
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+/* ================= INPUT ================= */
+.input-field {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    font-size: 15px;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #0a3d2f;
+}
+
+/* ================= BUTTON ================= */
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background: #0a3d2f;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #062b21;
+}
+
+/* ================= ERROR MESSAGE ================= */
+.error-message {
+    width: 100%;
+    max-width: 600px;
+    background: #f8d7da;
+    color: #842029;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* ================= SWITCH LINK ================= */
+.switch-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.switch-link a {
+    color: #0a3d2f;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.switch-link a:hover {
+    text-decoration: underline;
+}
+
+/* ================= RADIO BUTTONS ================= */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .auth-wrapper {
+        flex-direction: column;
+    }
+
+    .auth-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .auth-form {
+        width: 100%;
+        padding: 40px;
+    }
+}
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.success-message {
+    background: #eafaf1;
+    color: #1e8449;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ================= APP HEADER / NAVIGATION ================= */
+.app-header {
+    display: flex;
+    justify-content: space-between; /* logo left, nav right */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 40px auto; /* center horizontally and add space below */
+    padding: 20px 0;
+}
+
+.app-header .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.app-header .brand img {
+    width: 58px;
+    height: 58px;
+}
+
+.app-header .brand span {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0a3d2f;
+}
+
+/* Navigation links */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0a3d2f;
+    position: relative;
+}
+
+.main-nav a.active {
+    border-bottom: 2px solid #0a3d2f;
+    padding-bottom: 4px;
+}
+
+/* Optional: hover effect */
+.main-nav a:hover {
+    color: #062b21;
+}

@@ -1,0 +1,345 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+/* ================= PAGE CONTAINER ================= */
+.page-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* ================= APP HEADER ================= */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 40px;
+}
+
+.brand span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0a3d2f;
+}
+
+/* ================= NAVIGATION ================= */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0a3d2f;
+}
+
+.main-nav a.active {
+    border-bottom: 2px solid #0a3d2f;
+    padding-bottom: 4px;
+}
+
+.main-nav a:hover {
+    color: #062b21;
+}
+
+/* ================= PROFILE LINK ================= */
+.profile-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-pic {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ================= BUTTON ================= */
+.btn-primary {
+    padding: 14px 28px;
+    background: #0a3d2f;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+    background: #062b21;
+    transform: translateY(-1px);
+}
+
+/* ================= MAIN CONTAINER ================= */
+.container {
+    background: transparent;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #0a3d2f;
+}
+
+/* ================= CARD ================= */
+.card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ================= FORM CONTAINER ================= */
+.form-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* ================= FORM ================= */
+.styled-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* ================= LABELS ================= */
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+/* ================= INPUT FIELDS ================= */
+.input-field {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    background: #f9f9f9;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #0a3d2f;
+    box-shadow: 0 0 0 2px rgba(10, 61, 47, 0.15);
+    background: #fff;
+}
+
+textarea.input-field {
+    resize: vertical;
+}
+
+/* ================= FILE INPUT ================= */
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    background: #f7f7f7;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+input[type="file"]:hover {
+    border-color: #0a3d2f;
+    background: #f0f5f3;
+}
+
+/* ================= FULL WIDTH BUTTON ================= */
+.full-width {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* ================= MESSAGES ================= */
+.success-message,
+.error-message {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    text-align: center;
+    font-weight: 500;
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.error-message p {
+    margin: 5px 0;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        margin: 20px;
+    }
+}
+
+/* ================= STATS ================= */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #0a3d2f, #0e5a44);
+    color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+}
+
+.stat-card h3 {
+    font-size: 36px;
+    margin-bottom: 6px;
+}
+
+.stat-card p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ================= TABLE ================= */
+.services-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.services-table thead {
+    background: #f5f7f6;
+}
+
+.services-table th {
+    padding: 14px;
+    text-align: left;
+    font-size: 13px;
+    color: #444;
+    text-transform: uppercase;
+}
+
+.services-table td {
+    padding: 16px 14px;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.services-table tbody tr:hover {
+    background: #f9f9f9;
+}
+
+/* ================= STATUS BADGES ================= */
+.services-table td:nth-child(4),
+.services-table td:nth-child(5) {
+    font-weight: 600;
+}
+
+.services-table td:nth-child(4) {
+    color: #2ecc71;
+}
+
+.services-table td:nth-child(5) {
+    color: #f1c40f;
+}
+
+/* ================= ACTION LINKS ================= */
+.action-link {
+    color: #0a3d2f;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.action-link:hover {
+    text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-table {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        margin: 20px;
+    }
+
+    .services-table thead {
+        display: none;
+    }
+
+    .services-table tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .services-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px;
+    }
+}

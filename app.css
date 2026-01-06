@@ -1,0 +1,478 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+/* ================= PAGE CONTAINER ================= */
+.page-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* ================= APP HEADER / NAVIGATION ================= */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.app-header .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.app-header .brand img {
+    width: 40px;
+}
+
+.app-header .brand span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0a3d2f;
+}
+
+/* Navigation links */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0a3d2f;
+    position: relative;
+}
+
+.main-nav a.active {
+    border-bottom: 2px solid #0a3d2f;
+    padding-bottom: 4px;
+}
+
+.main-nav a:hover {
+    color: #062b21;
+}
+
+/* ================= PROFILE NAVIGATION ELEMENTS ================= */
+.profile-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-pic {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Cart icon */
+.cart-link {
+    position: relative;
+}
+
+.cart-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ================= GENERAL CARD ================= */
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= FORM STYLES ================= */
+.form-container {
+    max-width: 600px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* ================= INPUT FIELDS ================= */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    background: #f9f9f9;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #0a3d2f;
+}
+
+/* ================= BUTTONS ================= */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 24px;
+    background: #0a3d2f;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    max-width: 400px;
+}
+
+.btn-primary:hover {
+    background: #062b21;
+}
+
+/* ================= MESSAGES ================= */
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.error-message p {
+    margin: 5px 0;
+}
+
+/* ================= AUTH FORM SPECIFIC ================= */
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.auth-form {
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.auth-form h2 {
+    font-size: 30px;
+    color: #0a3d2f;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.switch-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+
+.switch-link a {
+    color: #0a3d2f;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.switch-link a:hover {
+    text-decoration: underline;
+}
+
+/* Radio buttons */
+.radio-group {
+    display: flex;
+    gap: 25px;
+    margin-top: 8px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* ================= PROFILE PAGE LAYOUT ================= */
+.profile-layout {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 30px;
+}
+
+/* Left column - Profile card */
+.profile-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.avatar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.camera-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.camera-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.profile-email {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Role badge */
+.role-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #fff;
+}
+
+.role-badge.client {
+    background: #3498db;
+}
+
+.role-badge.freelancer {
+    background: #2ecc71;
+}
+
+/* Stats card */
+.stats-card {
+    margin-top: 25px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.stat h4 {
+    font-size: 22px;
+}
+
+.stat span {
+    font-size: 13px;
+    color: #666;
+}
+
+.stat .green {
+    color: #2ecc71;
+}
+
+.stat .gold {
+    color: #f1c40f;
+}
+
+/* Right column */
+.profile-right .card h2 {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    margin: 25px 0 10px;
+    font-size: 15px;
+    color: #0a3d2f;
+}
+
+.profile-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+/* ================= SERVICES PAGE ================= */
+.container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* Services grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Service card */
+.service-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.service-card .freelancer {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.service-card .category {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.service-card .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.service-card .btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 22px;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 900px) {
+    .profile-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        margin: 20px;
+    }
+
+    .profile-row {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-form {
+        padding: 30px 20px;
+    }
+}
